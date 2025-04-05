@@ -1,4 +1,4 @@
-:root {
+/*:root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -66,3 +66,107 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+*/
+
+
+.home-container {
+  min-height: 100vh;
+  background-color: #fdf2dc;
+  color: black;
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar-button {
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-button:hover {
+  background-color: #333;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 64px 16px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-subheading {
+  margin-top: 16px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #4a4a4a;
+}
+
+.tarot-section {
+  margin-top: 64px;
+}
+
+.tarot-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.tarot-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 32px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tarot-card {
+  text-align: center;
+}
+
+.tarot-card-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card {
+  background-color: #0e0e2c;
+  padding: 16px;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.tarot-image {
+  width: 100%;
+  height: auto;
+}
+
+
+
