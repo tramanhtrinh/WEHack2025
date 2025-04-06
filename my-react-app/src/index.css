@@ -1,74 +1,3 @@
-/*:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-*/
-
-
 .home-container {
   min-height: 100vh;
   background-color: #fdf2dc;
@@ -83,6 +12,7 @@ button:focus-visible {
   padding: 16px 24px;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar-title {
@@ -96,12 +26,26 @@ button:focus-visible {
   gap: 24px;
 }
 
+.navbar-links a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navbar-button {
   background-color: black;
   color: white;
   padding: 8px 16px;
   border: none;
   cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar-button:hover {
@@ -124,6 +68,7 @@ button:focus-visible {
   margin-left: auto;
   margin-right: auto;
   color: #4a4a4a;
+  font-size: 1.2rem;
 }
 
 .tarot-section {
@@ -138,35 +83,53 @@ button:focus-visible {
 
 .tarot-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 32px;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: start;
 }
 
 .tarot-card {
+  width: 100%;
+  max-width: 300px;
   text-align: center;
 }
 
 .tarot-card-title {
   font-weight: 600;
   margin-bottom: 8px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .card {
-  background-color: #0e0e2c;
-  padding: 16px;
+  background-color: #fdf2dc;
+  padding: 0;
+  width: 100%;
 }
 
 .card-content {
-  padding: 16px;
+  padding: 0;
 }
 
 .tarot-image {
   width: 100%;
   height: auto;
+  border-radius: 5%;
+  object-fit: cover;
+  cursor: pointer;
 }
 
+.tarot-link {
+  text-decoration: none;
+  display: block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 12px;
+  cursor: pointer;
+}
 
-
+.tarot-link:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+} 

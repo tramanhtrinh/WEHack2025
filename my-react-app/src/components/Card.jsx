@@ -1,9 +1,30 @@
-import React from 'react';
+ import React from 'react';
 
-export function Card({ children }) {
-  return <div className="card">{children}</div>;
+export function Card({ children, className }) {
+  return (
+    <div className={`card ${className}`}>
+      {children}
+    </div>
+  );
 }
 
-export function CardContent({ children }) {
-  return <div className="card-content">{children}</div>;
+export function CardContent({ children, className }) {
+  return (
+    <div className={`card-content ${className}`}>
+      {children}
+    </div>
+  );
+} 
+
+  // App.jsx
+
+/*
+  import React from 'react';
+
+function App() {
+  return <div>Hello, world!</div>;
 }
+
+export default App;
+
+*/
